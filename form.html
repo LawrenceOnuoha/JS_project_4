@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <form action="/action_page.php">
+
+        <label for="fname">Title</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="description">Description</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="fname">Category</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="fname">Priority Level</label><br>
+        <select name="Priority" id="cars">
+        <option value="color">Low</option>
+        <option value="color">Medium</option>
+        <option value="color">High</option>
+        </select><br> 
+        <label for="fname">Progress Level</label><br>
+        <select name="Progress" id="Progress">
+            <option value="number">Not started</option>
+            <option value="number">Started</option>
+            <option value="number">In Progress</option>
+            <option value="number">Done</option>
+            </select><br>
+            <br>
+        <input type="submit" value="Submit" style="background-color: ivory;">
+        <input type="reset" value="Reset">
+
+        <script>
+            document.getElementById("").addEventListener("reset", function(event) {
+                // Prevent form submission
+                event.preventDefault();
+    
+                // Reset form fields
+                this.reset();
+            });
+        </script>
+
+        <link rel="stylesheet" href="style.css">
+
+    </form>
+    
+</body>
+</html>
